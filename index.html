@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¡Feliz Navidad!</title>
-  <link rel="stylesheet" href="style00.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Navidad</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="tarjeta">
-    <div class="lights">
-      <div class="red light"></div>
-      <div class="yellow light"></div>
-      <div class="green light"></div>
-      <div class="blue light"></div>
-    </div>
-    <h1 id="title">🎄 ¡Feliz Navidad! 🎅</h1>
-    
-    <div id="snow-container"></div>
-    <div class="wrapper">
-      <div class="lid one"></div>
-      <div class="lid two"></div>
-      <div class="envelope"></div>
-      <div class="letter">
-      <p class="phrase">Que la magia de esta navidad sea la más grande luz en tu hogar 🌟</p>
-    </div>
-    </div>
-  </main>
-  <script src="/tarjetas/03/script00.js"></script>
+    <main class="main-container">
+        <div class="luces">
+            <div class="luz roja"></div>
+            <div class="luz amarilla"></div>
+            <div class="luz verde"></div>
+            <div class="luz azul"></div>
+        </div>
+
+        <section id="contenido-original">
+        <h1 class="title">¡Feliz Navidad! 🎄</h1>
+        <img src="img/reindeer.png" alt="reindeer" class="reindeer">
+        <button onclick="cambiarContenido()" class="nose-reindeer">Cambiar Contenido</button>
+        </section>
+
+        <section id="contenido-nuevo" style="display: none;"> 
+            <div class="outside">
+                <div class="front">
+                    <h1>TE DESEAMOS LO MEJOR</h1>
+                    <img src="img/santa.png" alt="reindeer" class="santa">
+                </div>
+                <div class="back"></div>
+            </div>
+            <div class="inside">
+                <p>Que cada campanada navideña traiga paz y felicidad a tu vida.</p>
+                <h1>&#127873;</h1>
+            </div>
+        </section>
+    </main>
+    <div class="snow-floor"></div>
+    <script src="script.js"></script>
 </body>
 </html>
