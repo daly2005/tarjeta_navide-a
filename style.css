@@ -260,8 +260,15 @@ pre span:last-child {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
     padding: 30px;
+    padding-top: 0px;
 }
 .idk {
     height: 200px;
-    padding-bottom: 30px;
+    margin-top: -50px;
+}
+.fondo {
+    background-color: white;
+    padding: 30px;
+    margin: 0px;
+    height: 320px ;
 }
