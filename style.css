@@ -6,6 +6,8 @@ body {
     margin: 0;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .main-container {
@@ -49,13 +51,13 @@ pre span:last-child {
 }
 
 .title {
-    color: #fff;
+    color: white;
     font-family: "Lobster";
     font-weight: lighter;
     font-size: 100px;
-    position: absolute;
-    top: 20px;
-    right: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes fall {
@@ -70,28 +72,42 @@ pre span:last-child {
 
 .reindeer {
     background-size: cover;
+    display: flex;
+    justify-content: center;
     position: absolute;
-    bottom: -35px;
-    right: 520px;
+    bottom: 19px;
+    right: 385px;
     transform: rotate(0.8deg);
 }
 .nose-reindeer {
     width: 100px; 
     height: 50px; 
-    background-color: rgb(255, 0, 0); 
+    background: linear-gradient(135deg, #290000, #ff3030, #2e0000);
+    background-size: 200% 200%;
     border-radius: 50% / 50%; 
-    border-color: red;
+    border-color: rgb(134, 0, 0);
+    display: flex;
+    justify-content: center;
     position: absolute;
     bottom: 4px;
-    right: 730px;
+    right: 598px;
     transition: transform 0.3s ease;
     transition: box-shadow 0.3s ease;
+    animation: shine 2s linear infinite; 
     color: red;
 }
 .nose-reindeer:hover {
     transform: scale(1.2);
     box-shadow: 0 0 45px 15px rgb(255, 38, 38);
 }
+@keyframes shine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
 
 .luces {
     display: flex;
@@ -228,15 +244,24 @@ pre span:last-child {
     right: 5;
     bottom: 0px;
 }
-.outside p {
+.outside h1 {
     font-size: 23px;
     text-transform: uppercase;
     margin-top: 30px;
     text-align: center;
     letter-spacing: 6px;
-    color: #000046;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
 }
-.inside h1 {
-    font-size: 120px;
-    line-height: 120px;
+.phrase {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+}
+.idk {
+    height: 200px;
+    padding-bottom: 30px;
 }
